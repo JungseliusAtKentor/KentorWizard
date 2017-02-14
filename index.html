@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Kentor Wizard Exemple</title>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wizard.js"></script>
+</head>
+
+<body>
+<div>
+    <div class="wizard" data-forward-button-text="Next">
+        <div class="wizard-title-wrapper page-title-divider">
+            <div class="wizard-title"></div>
+        </div>
+        <div class="wizard-header">
+            <div class="wizard-step-label"></div>
+            <div class="wizard-info"></div>
+        </div>
+
+        <div class="wizard-step">
+            <p>This is step one</p>
+        </div>
+        <div class="wizard-step">
+            <p>This is step two</p>
+        </div>
+        <div class="wizard-step" data-step-header="Last Step" data-forward-button-text="Send">
+            <p>This is step three</p>
+        </div>
+
+        <div class="wizard-footer">
+            <div class="wizard-back">
+                <button type="button" class="wizard-back-button">Back</button>
+            </div>
+            <div class="wizard-breadcrumb"></div>
+            <div class="wizard-forward">
+                <button type="button" class="wizard-forward-button">Next</button>
+            </div>
+            <div class="wizard-message-area"></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

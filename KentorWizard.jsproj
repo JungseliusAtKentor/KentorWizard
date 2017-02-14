@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+      <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>dbdac598-bca6-46a5-aa2f-a425fcca23b5</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>KentorWizard_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include=".bin\node.cmd" />
+    <None Include=".bin\git.cmd" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="bower.json" />
+    <Content Include="bower_components\jquery\.bower.json" />
+    <Content Include="bower_components\jquery\.editorconfig" />
+    <Content Include="bower_components\jquery\.gitattributes" />
+    <Content Include="bower_components\jquery\.gitignore" />
+    <Content Include="bower_components\jquery\.gitmodules" />
+    <Content Include="bower_components\jquery\.jshintrc" />
+    <Content Include="bower_components\jquery\AUTHORS.txt" />
+    <Content Include="bower_components\jquery\build\release-notes.js" />
+    <Content Include="bower_components\jquery\build\release.js" />
+    <Content Include="bower_components\jquery\component.json" />
+    <Content Include="bower_components\jquery\composer.json" />
+    <Content Include="bower_components\jquery\CONTRIBUTING.md" />
+    <Content Include="bower_components\jquery\Gruntfile.js" />
+    <Content Include="bower_components\jquery\jquery-migrate.js" />
+    <Content Include="bower_components\jquery\jquery-migrate.min.js" />
+    <Content Include="bower_components\jquery\jquery.js" />
+    <Content Include="bower_components\jquery\jquery.min.js" />
+    <Content Include="bower_components\jquery\jquery.min.map" />
+    <Content Include="bower_components\jquery\MIT-LICENSE.txt" />
+    <Content Include="bower_components\jquery\package.json" />
+    <Content Include="bower_components\jquery\README.md" />
+    <Content Include="bower_components\jquery\speed\benchmark.js" />
+    <Content Include="bower_components\jquery\speed\benchmarker.css" />
+    <Content Include="bower_components\jquery\speed\benchmarker.js" />
+    <Content Include="bower_components\jquery\speed\closest.html" />
+    <Content Include="bower_components\jquery\speed\css.html" />
+    <Content Include="bower_components\jquery\speed\event.html" />
+    <Content Include="bower_components\jquery\speed\filter.html" />
+    <Content Include="bower_components\jquery\speed\find.html" />
+    <Content Include="bower_components\jquery\speed\index.html" />
+    <Content Include="bower_components\jquery\speed\jquery-basis.js" />
+    <Content Include="bower_components\jquery\speed\slice.vs.concat.html" />
+    <Content Include="bower_components\jquery\src\.jshintrc" />
+    <Content Include="bower_components\jquery\src\ajax.js" />
+    <Content Include="bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="bower_components\jquery\src\ajax\script.js" />
+    <Content Include="bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="bower_components\jquery\src\attributes.js" />
+    <Content Include="bower_components\jquery\src\callbacks.js" />
+    <Content Include="bower_components\jquery\src\core.js" />
+    <Content Include="bower_components\jquery\src\css.js" />
+    <Content Include="bower_components\jquery\src\data.js" />
+    <Content Include="bower_components\jquery\src\deferred.js" />
+    <Content Include="bower_components\jquery\src\deprecated.js" />
+    <Content Include="bower_components\jquery\src\dimensions.js" />
+    <Content Include="bower_components\jquery\src\effects.js" />
+    <Content Include="bower_components\jquery\src\event-alias.js" />
+    <Content Include="bower_components\jquery\src\event.js" />
+    <Content Include="bower_components\jquery\src\exports.js" />
+    <Content Include="bower_components\jquery\src\intro.js" />
+    <Content Include="bower_components\jquery\src\manipulation.js" />
+    <Content Include="bower_components\jquery\src\offset.js" />
+    <Content Include="bower_components\jquery\src\outro.js" />
+    <Content Include="bower_components\jquery\src\queue.js" />
+    <Content Include="bower_components\jquery\src\serialize.js" />
+    <Content Include="bower_components\jquery\src\sizzle-jquery.js" />
+    <Content Include="bower_components\jquery\src\support.js" />
+    <Content Include="bower_components\jquery\src\traversing.js" />
+    <Content Include="bower_components\jquery\test\.jshintignore" />
+    <Content Include="bower_components\jquery\test\.jshintrc" />
+    <Content Include="bower_components\jquery\test\csp.php" />
+    <Content Include="bower_components\jquery\test\data\1x1.jpg" />
+    <Content Include="bower_components\jquery\test\data\ajax\unreleasedXHR.html" />
+    <Content Include="bower_components\jquery\test\data\atom+xml.php" />
+    <Content Include="bower_components\jquery\test\data\badcall.js" />
+    <Content Include="bower_components\jquery\test\data\badjson.js" />
+    <Content Include="bower_components\jquery\test\data\cleanScript.html" />
+    <Content Include="bower_components\jquery\test\data\core\cc_on.html" />
+    <Content Include="bower_components\jquery\test\data\dashboard.xml" />
+    <Content Include="bower_components\jquery\test\data\dimensions\documentLarge.html" />
+    <Content Include="bower_components\jquery\test\data\dimensions\documentSmall.html" />
+    <Content Include="bower_components\jquery\test\data\echoData.php" />
+    <Content Include="bower_components\jquery\test\data\echoQuery.php" />
+    <Content Include="bower_components\jquery\test\data\errorWithText.php" />
+    <Content Include="bower_components\jquery\test\data\etag.php" />
+    <Content Include="bower_components\jquery\test\data\evalScript.php" />
+    <Content Include="bower_components\jquery\test\data\event\longLoadScript.php" />
+    <Content Include="bower_components\jquery\test\data\event\promiseReady.html" />
+    <Content Include="bower_components\jquery\test\data\event\syncReady.html" />
+    <Content Include="bower_components\jquery\test\data\headers.php" />
+    <Content Include="bower_components\jquery\test\data\iframe.html" />
+    <Content Include="bower_components\jquery\test\data\if_modified_since.php" />
+    <Content Include="bower_components\jquery\test\data\jquery-1.8.2.ajax_xhr.min.js" />
+    <Content Include="bower_components\jquery\test\data\json.php" />
+    <Content Include="bower_components\jquery\test\data\jsonp.php" />
+    <Content Include="bower_components\jquery\test\data\json_obj.js" />
+    <Content Include="bower_components\jquery\test\data\manipulation\iframe-denied.html" />
+    <Content Include="bower_components\jquery\test\data\name.html" />
+    <Content Include="bower_components\jquery\test\data\name.php" />
+    <Content Include="bower_components\jquery\test\data\nocontent.php" />
+    <Content Include="bower_components\jquery\test\data\offset\absolute.html" />
+    <Content Include="bower_components\jquery\test\data\offset\body.html" />
+    <Content Include="bower_components\jquery\test\data\offset\fixed.html" />
+    <Content Include="bower_components\jquery\test\data\offset\relative.html" />
+    <Content Include="bower_components\jquery\test\data\offset\scroll.html" />
+    <Content Include="bower_components\jquery\test\data\offset\static.html" />
+    <Content Include="bower_components\jquery\test\data\offset\table.html" />
+    <Content Include="bower_components\jquery\test\data\params_html.php" />
+    <Content Include="bower_components\jquery\test\data\readywaitasset.js" />
+    <Content Include="bower_components\jquery\test\data\readywaitloader.js" />
+    <Content Include="bower_components\jquery\test\data\script.php" />
+    <Content Include="bower_components\jquery\test\data\selector\html5_selector.html" />
+    <Content Include="bower_components\jquery\test\data\selector\sizzle_cache.html" />
+    <Content Include="bower_components\jquery\test\data\statusText.php" />
+    <Content Include="bower_components\jquery\test\data\support\bodyBackground.html" />
+    <Content Include="bower_components\jquery\test\data\support\shrinkWrapBlocks.html" />
+    <Content Include="bower_components\jquery\test\data\support\testElementCrash.html" />
+    <Content Include="bower_components\jquery\test\data\test.html" />
+    <Content Include="bower_components\jquery\test\data\test.js" />
+    <Content Include="bower_components\jquery\test\data\test.php" />
+    <Content Include="bower_components\jquery\test\data\test2.html" />
+    <Content Include="bower_components\jquery\test\data\test3.html" />
+    <Content Include="bower_components\jquery\test\data\testinit.js" />
+    <Content Include="bower_components\jquery\test\data\testrunner.js" />
+    <Content Include="bower_components\jquery\test\data\testsuite.css" />
+    <Content Include="bower_components\jquery\test\data\text.php" />
+    <Content Include="bower_components\jquery\test\data\ua.txt" />
+    <Content Include="bower_components\jquery\test\data\with_fries.xml" />
+    <Content Include="bower_components\jquery\test\data\with_fries_over_jsonp.php" />
+    <Content Include="bower_components\jquery\test\delegatetest.html" />
+    <Content Include="bower_components\jquery\test\hovertest.html" />
+    <Content Include="bower_components\jquery\test\index.html" />
+    <Content Include="bower_components\jquery\test\localfile.html" />
+    <Content Include="bower_components\jquery\test\networkerror.html" />
+    <Content Include="bower_components\jquery\test\polluted.php" />
+    <Content Include="bower_components\jquery\test\readywait.html" />
+    <Content Include="bower_components\jquery\test\unit\ajax.js" />
+    <Content Include="bower_components\jquery\test\unit\attributes.js" />
+    <Content Include="bower_components\jquery\test\unit\callbacks.js" />
+    <Content Include="bower_components\jquery\test\unit\core.js" />
+    <Content Include="bower_components\jquery\test\unit\css.js" />
+    <Content Include="bower_components\jquery\test\unit\data.js" />
+    <Content Include="bower_components\jquery\test\unit\deferred.js" />
+    <Content Include="bower_components\jquery\test\unit\deprecated.js" />
+    <Content Include="bower_components\jquery\test\unit\dimensions.js" />
+    <Content Include="bower_components\jquery\test\unit\effects.js" />
+    <Content Include="bower_components\jquery\test\unit\event.js" />
+    <Content Include="bower_components\jquery\test\unit\exports.js" />
+    <Content Include="bower_components\jquery\test\unit\manipulation.js" />
+    <Content Include="bower_components\jquery\test\unit\offset.js" />
+    <Content Include="bower_components\jquery\test\unit\queue.js" />
+    <Content Include="bower_components\jquery\test\unit\selector.js" />
+    <Content Include="bower_components\jquery\test\unit\serialize.js" />
+    <Content Include="bower_components\jquery\test\unit\support.js" />
+    <Content Include="bower_components\jquery\test\unit\traversing.js" />
+    <Content Include="bower_components\jquery\test\xhtml.php" />
+    <Content Include="images\LockScreenLogo.scale-200.png" />
+    <Content Include="images\SplashScreen.scale-200.png" />
+    <Content Include="images\Square150x150Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.scale-200.png" />
+    <Content Include="images\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="images\StoreLogo.png" />
+    <Content Include="images\Wide310x150Logo.scale-200.png" />
+    <Content Include="index.html" />
+    <Content Include="js\main.js" />
+    <Content Include="js\wizard.js" />
+    <Content Include="packages.config" />
+    <None Include="KentorWizard_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties bower_1json__JSONSchema="" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
