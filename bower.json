@@ -9,11 +9,8 @@
   "description": "This wizard provides basic wizard functionality such as next and previous buttons and breadvrumb navigation.",
   "homepage": "https://github.com/JungseliusAtKentor/KentorWizard",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "*",
+    "js/wizard.js"
   ],
   "keywords": [
     "wizard",
