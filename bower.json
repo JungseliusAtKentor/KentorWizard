@@ -10,7 +10,7 @@
   "homepage": "https://github.com/JungseliusAtKentor/KentorWizard",
   "ignore": [
     "*",
-    "js/wizard.js"
+    "!js/wizard.js"
   ],
   "keywords": [
     "wizard",
