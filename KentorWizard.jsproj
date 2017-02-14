@@ -58,8 +58,6 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include=".bin\node.cmd" />
-    <None Include=".bin\git.cmd" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="bower.json" />
