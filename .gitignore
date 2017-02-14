@@ -251,7 +251,6 @@ paket-files/
 .idea/
 *.sln.iml
 
-.bin
-images/
-bower_components
+.bin/
+bower_components/
 
