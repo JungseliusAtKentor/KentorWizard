@@ -253,3 +253,7 @@ paket-files/
 
 .bin/
 bower_components/
+images/
+*.jsproj
+packages.config
+package.appxmanifest
