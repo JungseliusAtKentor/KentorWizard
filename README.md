@@ -1,6 +1,7 @@
 #KentorWizard
 
 ####` PM> Install-Package KentorWizard`
+####` bower install KentorWizard`
 
 ##Description 
 This wizard provides basic wizard functionality such as next and previous step buttons and breadcrumb navigation.
@@ -13,8 +14,13 @@ To use breadcrumb navigation simply use the class `<div class="wizard-breadcrumb
 <head>
     <meta charset="utf-8"/>
     <title>Kentor Wizard Exemple</title>
+    //using NuGet
     <script src="Scripts/jquery-1.10.2.js"></script>
     <script src="Scripts/wizard.js"></script>
+    //using Bower
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/KentorWizard/js/wizard.js"></script>
+    
 
 </head>
 <body>
