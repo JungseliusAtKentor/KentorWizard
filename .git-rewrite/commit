@@ -1,6 +1,6 @@
-tree 6ca24a5fc258af9937b3a3e7aa752e0d109456bb
-parent e63816d2bfdeab34fb7d0dc0de747151d1c68735
-author JungseliusAtKentor <albert.jungselius@kentor.se> 1486983588 +0100
-committer JungseliusAtKentor <albert.jungselius@kentor.se> 1486983588 +0100
+tree 8b1562924bff2b13238050b6e40007c893b6f22a
+parent 46435905da37233c3976f532fbc06bc96502e4d4
+author Albert Jungselius <albert.jungselius@kentor.se> 1487076658 +0100
+committer GitHub <noreply@github.com> 1487076658 +0100
 
-Bower
+Delete git.cmd
