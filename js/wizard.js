@@ -8,10 +8,10 @@
         var $steps = $wizard.find(".wizard-step:not(.wizard-step-hidden)");
         //Default options
         var defaultOpts = {
-            nextHandler: function (event) { },
-            onloadHandler: function (event) { },
-            backHandler: function (event) { },
-            wizardStepRendered: function (event) { },
+            nextHandler: function () { },
+            onloadHandler: function () { },
+            backHandler: function () { },
+            wizardStepRendered: function () { },
             stepText: "Step {0} of {1}",
             shiftAnimationHide: function (stepToHide) { stepToHide.hide(); },
             shiftAnimationShow: function (stepToShow) { stepToShow.show(); },
@@ -127,7 +127,17 @@
             if (buttonText === undefined) {
                 buttonText = defaultForwardButtonText;
             }
-            $wizard.find(".wizard-forward-button span").text(buttonText);
+            var buttonStyled = false;
+            $(".wizard-forward-button").find("*").each(function () {
+                if ($(this).text().length > 0) {
+                    $(this).text(buttonText);
+                    buttonStyled = true;
+
+                }
+            });
+            if (!buttonStyled) {
+                $wizard.find(".wizard-forward-button").text(buttonText);
+            }
 
             if (defaultOpts.focusFirst) {
                 var first = $steps.eq(currentStep)
@@ -208,11 +218,11 @@
             $steps.eq(currentStep).show();
 
 
-            $wizard.find(".wizard-back-button").click(function (event) {
+            $wizard.find(".wizard-back-button").click(function () {
                 goWizardBack();
             });
 
-            $wizard.find(".wizard-forward-button").click(function (event) {
+            $wizard.find(".wizard-forward-button").click(function () {
                 goWizardNext();
             });
 
@@ -226,13 +236,13 @@
         }
 
         return {
-            goWizardNext: function() {
+            goWizardNext: function () {
                 return goWizardNext();
             },
-            goWizardBack: function() {
+            goWizardBack: function () {
                 return goWizardBack();
             },
-            goWizardStep: function(toStep) {
+            goWizardStep: function (toStep) {
                 return goWizardStep(toStep);
             }
         };
