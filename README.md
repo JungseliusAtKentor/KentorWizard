@@ -1,6 +1,6 @@
 #KentorWizard
 
-####` PM> Install-Package KentorWizard`
+####` PM> Install-Package Kentor.jQueryWizard`
 ####` bower install KentorWizard`
 
 ##Description 
