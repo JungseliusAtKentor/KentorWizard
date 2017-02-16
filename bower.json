@@ -7,7 +7,7 @@
     "jquery": "1.9.1"
   },
   "description": "This wizard provides basic wizard functionality such as next and previous buttons and breadvrumb navigation.",
-  "homepage": "https://github.com/JungseliusAtKentor/KentorWizard",
+  "homepage": "https://github.com/KentorIT/KentorWizard",
   "ignore": [
     "*",
     "!js/wizard.js"
