@@ -146,15 +146,15 @@ $.fn.extend({
 ###Navigation
 
 ```javascript
-myWizard.goWizardStep(number);
-myWizard.goWizardStep("#id");
-myWizard.goWizardNext();
-myWizard.goWizardBack();
+(".wizard").goWizardStep(number);
+(".wizard").goWizardStep("#id");
+(".wizard").goWizardNext();
+(".wizard").goWizardBack();
 
-myWizard.wizard().goWizardStep(number);
-myWizard.wizard().goWizardStep("#id");
-myWizard.wizard().goWizardNext();
-myWizard.wizard().goWizardBack();
+(".wizard").wizard().goWizardStep(number);
+(".wizard").wizard().goWizardStep("#id");
+(".wizard").wizard().goWizardNext();
+(".wizard").wizard().goWizardBack();
 
 ```
 
