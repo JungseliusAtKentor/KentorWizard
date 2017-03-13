@@ -146,9 +146,6 @@ $.fn.extend({
 ###Navigation
 
 ```javascript
-var myWizard = $(".wizard").wizard(function () {
- //Your options
-});
 myWizard.goWizardStep(number);
 myWizard.goWizardStep("#id");
 myWizard.goWizardNext();
