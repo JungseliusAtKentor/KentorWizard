@@ -146,10 +146,13 @@ $.fn.extend({
 ###Navigation
 
 ```javascript
-(".wizard").goWizardStep(number);
-(".wizard").goWizardStep("#id");
-(".wizard").goWizardNext();
-(".wizard").goWizardBack();
+var myWizard = $(".wizard").wizard(function () {
+ //Your options
+});
+myWizard.goWizardStep(number);
+myWizard.goWizardStep("#id");
+myWizard.goWizardNext();
+myWizard.goWizardBack();
 
 (".wizard").wizard().goWizardStep(number);
 (".wizard").wizard().goWizardStep("#id");
