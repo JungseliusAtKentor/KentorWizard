@@ -146,10 +146,10 @@ $.fn.extend({
 ###Navigation
 
 ```javascript
-myWizard.goWizardStep(number);
-myWizard.goWizardStep("#id");
-myWizard.goWizardNext();
-myWizard.goWizardBack();
+(".wizard").myWizard.goWizardStep(number);
+(".wizard").myWizard.goWizardStep("#id");
+(".wizard").myWizard.goWizardNext();
+(".wizard").myWizard.goWizardBack();
 
 (".wizard").wizard().goWizardStep(number);
 (".wizard").wizard().goWizardStep("#id");
