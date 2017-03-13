@@ -39,6 +39,7 @@
             }
             defaultOpts.shiftAnimationHide($steps.eq(currentStep--));
             defaultOpts.shiftAnimationShow($steps.eq(currentStep));
+
             $(".wizard").data("currentStep", currentStep);
             wizardStepRendered({
                 LastPage: fromPage,
@@ -84,7 +85,7 @@
         };
         //Function to go to next step in wizard
         var goWizardNext = function () {
-            currentStep = $wizard.data("currentStep");
+            currentStep = $(".wizard").data("currentStep");
             var fromPage = $steps.eq(currentStep);
             var nextPage = $steps.eq(currentStep + 1);
             if (defaultOpts.nextHandler !== null) {
@@ -104,17 +105,18 @@
 
                 defaultOpts.shiftAnimationHide(fromPage);
                 defaultOpts.shiftAnimationShow(nextPage);
-
+                $wizard.data("currentStep", currentStep);
                 wizardStepRendered({
                     LastPage: fromPage,
                     RenderedPage: nextPage
                 });
-                $wizard.data("currentStep", currentStep);
+
             }
 
         };
         //Function to manage button text and other visual stuff
         var wizardStepRendered = function (args) {
+            currentStep = $(".wizard").data("currentStep");
             $steps = $wizard.find(".wizard-step:not(.wizard-step-hidden)");
             if (currentStep === 0) {
                 $wizard.find(".wizard-back-button").hide();
@@ -125,7 +127,7 @@
             var buttonText = $steps.eq(currentStep)
                 .data("forward-button-text");
             if (buttonText === undefined) {
-                buttonText = defaultForwardButtonText;
+                buttonText = $(".wizard").data("forward-button-text");
             }
             var buttonStyled = false;
             $(".wizard-forward-button").find("*").each(function () {
@@ -165,10 +167,10 @@
             }
         };
         //End wizard step rendered
-        if ($wizard.data("init") === undefined) {
+        if ($(".wizard").data("init") === undefined) {
             var defaultForwardButtonText = $wizard.data("forward-button-text");
-            $wizard.data("currentStep", 0);
-            $wizard.data("init", true);
+            $(".wizard").data("currentStep", 0);
+            $(".wizard").data("init", true);
             currentStep = 0;
 
             //This code handle the breadcrumbs
