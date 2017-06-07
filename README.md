@@ -1,14 +1,14 @@
-#KentorWizard
+# KentorWizard
 
-####PM> Install-Package Kentor.jQueryWizard
-####bower install KentorWizard
+#### PM> Install-Package Kentor.jQueryWizard
+#### bower install KentorWizard
 
-##Description 
+## Description 
 This wizard provides basic wizard functionality such as next and previous step buttons and breadcrumb navigation.
-####Breadcrumbs
+#### Breadcrumbs
 To use breadcrumb navigation simply use the class `<div class="wizard-breadcrumb"></div>`. The breadcrumb link text is, if not undefined, retrived from the ´data-step-header´ else it will display the step number.
-##HTML
-####A basic HTML example
+## HTML
+#### A basic HTML example
 ```html
 
 <head>
@@ -60,10 +60,10 @@ To use breadcrumb navigation simply use the class `<div class="wizard-breadcrumb
 </body>
 
 ```
-##JavaScript
+## JavaScript
  The wizard takes an object as an argument which enables the possibility to "overload" some wizard functions. 
 
-####Without an argument these default options will take effect
+#### Without an argument these default options will take effect
 ```javascript
  var defaultOpts = {
  	nextHandler: function(event) {}, 
@@ -77,7 +77,7 @@ To use breadcrumb navigation simply use the class `<div class="wizard-breadcrumb
 	focusFirst: true
 	}
 ```
-####An example on how to "overload" the wizard options
+#### An example on how to "overload" the wizard options
 ```javascript
 
 $(this).wizard({
@@ -112,8 +112,8 @@ $(this).wizard({
 
 ## More Examples
 
-###Add a new button
-####HTML
+### Add a new button
+#### HTML
 ```html
 <div class="wizard-footer">
 	<div class="myWizard-doSomething">
@@ -122,7 +122,7 @@ $(this).wizard({
 </div>
 ```
 
-####JavaScript
+#### JavaScript
 
 ```javascript
 
@@ -143,7 +143,7 @@ $.fn.extend({
 
 });
 ```
-###Navigation
+### Navigation
 
 ```javascript
 (".wizard").myWizard.goWizardStep(number);
@@ -158,7 +158,7 @@ $.fn.extend({
 
 ```
 
-####Use breadcrumbs with bootstrap example
+#### Use breadcrumbs with bootstrap example
 
 ```html
 <div class="wizard-breadcrumb"></div>
