@@ -1,7 +1,7 @@
 #KentorWizard
 
-####` PM> Install-Package Kentor.jQueryWizard`
-####` bower install KentorWizard`
+####PM> Install-Package Kentor.jQueryWizard
+####bower install KentorWizard
 
 ##Description 
 This wizard provides basic wizard functionality such as next and previous step buttons and breadcrumb navigation.
