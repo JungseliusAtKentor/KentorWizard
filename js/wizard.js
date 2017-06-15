@@ -6,6 +6,7 @@
         var numberOfSteps = $wizard.find(".wizard-step:not(.wizard-step-hidden)").length;
         var currentStep = $(".wizard").data("currentStep");  //If wizard initiated current step is "saved" in .wizard data-currentStep
         var $steps = $wizard.find(".wizard-step:not(.wizard-step-hidden)");
+        var buttonClicked = false;
         //Default options
         var defaultOpts = {
             nextHandler: function () { },
@@ -16,6 +17,7 @@
             shiftAnimationHide: function (stepToHide) { stepToHide.hide(); },
             shiftAnimationShow: function (stepToShow) { stepToShow.show(); },
             breadcrumbDivider: " | ",
+            allowMultipleClick: false,
             focusFirst: true
         };
 
@@ -221,11 +223,19 @@
 
 
             $wizard.find(".wizard-back-button").click(function () {
-                goWizardBack();
+                if (!buttonClicked || defaultOpts.allowMultipleClick) {
+                    buttonClicked = true;
+                    goWizardBack();
+                    buttonClicked = false;
+                }
             });
 
             $wizard.find(".wizard-forward-button").click(function () {
-                goWizardNext();
+                if (!buttonClicked || defaultOpts.allowMultipleClick) {
+                    buttonClicked = true;
+                    goWizardNext();
+                    buttonClicked = false;
+                }
             });
 
             if (defaultOpts.onloadHandler !== null) {

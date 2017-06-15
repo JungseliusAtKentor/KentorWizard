@@ -66,15 +66,16 @@ To use breadcrumb navigation simply use the class `<div class="wizard-breadcrumb
 #### Without an argument these default options will take effect
 ```javascript
  var defaultOpts = {
- 	nextHandler: function(event) {}, 
-	onloadHandler: function(event) {}, 
-	backHandler: function(event) {}, 
-	wizardStepRendered: function (event) { }, 
-	stepText: "Step {0} of {1}", 
-	shiftAnimationHide: function (stepToHide) { stepToHide.hide(); }, 
-	shiftAnimationShow: function (stepToShow) { stepToShow.show(); }, 
-	breadcrumbDivider: " | ", 
-	focusFirst: true
+ nextHandler: function () { },
+            onloadHandler: function () { },
+            backHandler: function () { },
+            wizardStepRendered: function () { },
+            stepText: "Step {0} of {1}",
+            shiftAnimationHide: function (stepToHide) { stepToHide.hide(); },
+            shiftAnimationShow: function (stepToShow) { stepToShow.show(); },
+            breadcrumbDivider: " | ",
+            allowMultipleClick: false,
+            focusFirst: true
 	}
 ```
 #### An example on how to "overload" the wizard options
@@ -104,6 +105,8 @@ $(this).wizard({
            shiftAnimationShow: function (stepToShow) { stepToShow.slideDown(); },
 		   //This is set between breadcrumb buttons
 		    breadcrumbDivider: "<<<<>>>>>",
+            //If true double click on buttons will execute two click events
+            allowMultipleClick: false,
 	   //When a step is rendered the wizard will as default if a form is used focus on the first input
 	   focusFirst: false
            
