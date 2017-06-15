@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Kentor.jQueryWizard</id>
+        <version>1.0.2</version>
+        <title>Kentor.jQueryWizard</title>
+        <authors>Johan Svärd,Albert Jungselius</authors>
+        <owners>Kentor AB</owners>
+        <licenseUrl>https://github.com/KentorIT/KentorWizard/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/KentorIT/KentorWizard</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/KentorIT/owin-cookie-saver/master/Kentor.OwinCookieSaver/Kentor.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This wizard provides basic wizard functionality such as next and previous step buttons.</description>
+        <copyright>Kentor AB</copyright>
+        <tags>kentor wizard jquery</tags>
+        <dependencies>
+            <dependency id="jQuery" version="1.9.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="js\wizard.js" target="content\Scripts\Kentor\wizard.js" />
+    </files>
+</package>
